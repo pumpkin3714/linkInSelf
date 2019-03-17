@@ -3,10 +3,19 @@
     "name": "LinkInSelf",
     "description": "link same domain with _self",
     "version": "1.0",
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
     "content_scripts": [
         {
-            "matches": ["https://*/*","http://*/*"],
-            "js": ["link_in_self.js"],
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "js": [
+                "link_in_self.js"
+            ],
             "run_at": "document_end"
         }
     ]
