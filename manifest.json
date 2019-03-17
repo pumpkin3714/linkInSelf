@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
     "name": "LinkInSelf",
-    "discription": "link same domain with _self",
+    "description": "link same domain with _self",
     "version": "1.0",
     "content_scripts": [
         {
-            "matches": ["https://*","http://*"],
+            "matches": ["https://*/*","http://*/*"],
             "js": ["link_in_self.js"],
             "run_at": "document_end"
         }
